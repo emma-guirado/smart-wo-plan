@@ -11,21 +11,29 @@
         <button class="normal-button">Random workout</button>
 
         <h2>Select Muscle Groups</h2>
-        <ul>
-            <li>Chest</li>
-            <li>Back</li>
-            <li>Shoulders</li>
-            <li>Biceps</li>
-            <li>Triceps</li>
-            <li>Legs</li>
-            <li>Glutes</li>
-            <li>Core</li>
-        </ul>
+        <form id="form-body-part">
+            <input class="part" type="checkbox" id="bodyPart1" name="bodyPart1" value="Chest">
+                <label for="bodyPart1">Chest</label><br>
+            <input class="part" type="checkbox" id="bodyPart2" name="bodyPart2" value="Back">
+                <label for="bodyPart2">Back</label><br>
+            <input class="part" type="checkbox" id="bodyPart3" name="bodyPart3" value="Shoulders">
+                <label for="bodyPart3">Shoulders</label><br>
+            <input class="part" type="checkbox" id="bodyPart4" name="bodyPart4" value="Biceps">
+                <label for="bodyPart4">Biceps</label><br>
+            <input class="part" type="checkbox" id="bodyPart5" name="bodyPart5" value="Triceps">
+                <label for="bodyPart5">Triceps</label><br>
+            <input class="part" type="checkbox" id="bodyPart6" name="bodyPart6" value="Legs">
+                <label for="bodyPart6">Legs</label><br>
+            <input class="part" type="checkbox" id="bodyPart7" name="bodyPart7" value="Glutes">
+                <label for="bodyPart7">Glutes</label><br>
+            <input class="part" type="checkbox" id="bodyPart8" name="bodyPart8" value="Core">
+                <label for="bodyPart8">Core</label><br>
+        </form>
         <h2>Available Equipment</h2>
         <ul>
             <li>Dumbbells</li>
             <li>Barbell</li>
-            <li>Resistance Bands</li>
+            <li id="resistance band">Resistance Bands</li>
             <li>Kettlebells</li>
             <li>Pull-up Bar</li>
             <li>Bodyweight Only</li>
@@ -42,5 +50,11 @@
         </ul>
 
         <button id="generate-button">Generate workout</button>
+
+        <button id="getList">Get List of body parts</button>
+        <br>
+        <div id="result"></div>
+
+        <script src="script.js"></script>
     </body>
 </html>
